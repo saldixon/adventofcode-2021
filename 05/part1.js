@@ -65,7 +65,7 @@ function getPointsCoveredByLine(line){
 
 function populateGrid(lines){
 	const grid = [];
-	for (ventline of relevantVentLines){
+	for (ventline of lines){
 		console.info(`line=${JSON.stringify(ventline)} vector=${getVectorToApply(ventline)}`);
 		const points = getPointsCoveredByLine(ventline);
 		console.info(`\npoints on grid = ${points}`);
